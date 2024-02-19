@@ -84,7 +84,7 @@ def print_cow():
     print(28 * " " + "[ E1tex | https://github.com/E1tex/]\r\n")
 
 def return_result(profile, config):
-    if profile['singletemplate']:
+    if profile.get('singletemplate'):
         try:
             templates = [profile['singletemplate']]
             profile['singletemplate'].format(f_name=profile['fname'], l_name=profile['lname'], num=profile['birthyear'])
@@ -92,7 +92,7 @@ def return_result(profile, config):
             sys.exit("Specify the right format for the template! You can find template example in config file.")
     else:
         templates = config["templates"]
-    if profile['outputfile'] is None:
+    if profile.get('outputfile') is None:
         for template in templates:
             formatted_string = template.format(f_name=profile['fname'], l_name=profile['lname'], num=profile['birthyear'])
             print(formatted_string)
