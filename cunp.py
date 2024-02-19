@@ -159,7 +159,7 @@ def get_parser():
     parser.add_argument(
         "-t",
         "--template",
-        help="The discovered username example"
+        help="The template example('{f_name}_{num}_{l_name}')"
     )
 
     return parser
