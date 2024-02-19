@@ -1,0 +1,24 @@
+{
+  "templates": [
+    "{f_name}", "{l_name}", "{f_name}{l_name}", "{l_name}{f_name}", "{f_name}.{l_name}",
+    "{l_name}.{f_name}", "{f_name}_{l_name}", "{l_name}_{f_name}", "{f_name}{num}",
+    "{num}{f_name}", "{l_name}{num}", "{num}{l_name}", "{f_name}{l_name}{num}", "{f_name}{num}{l_name}",
+    "{num}{f_name}{l_name}", "{l_name}{f_name}{num}", "{l_name}{num}{f_name}", "{num}{l_name}{f_name}",
+    "{f_name}.{l_name}{num}", "{f_name}.{num}{l_name}", "{f_name}{num}.{l_name}", "{num}{f_name}.{l_name}",
+    "{l_name}.{f_name}{num}", "{l_name}.{num}{f_name}", "{l_name}{num}.{f_name}", "{num}{l_name}.{f_name}",
+    "{f_name}_{l_name}{num}", "{f_name}_{num}{l_name}", "{f_name}{num}_{l_name}", "{num}{f_name}_{l_name}",
+    "{l_name}_{f_name}{num}", "{l_name}_{num}{f_name}", "{l_name}{num}_{f_name}", "{num}{l_name}_{f_name}",
+    "{f_name}.{l_name[0]}", "{l_name}.{f_name[0]}", "{f_name[0]}{l_name}", "{l_name[0]}{f_name}",
+    "{f_name[0]}.{l_name}", "{l_name[0]}.{f_name}", "{f_name[0]}_{l_name}", "{l_name[0]}_{f_name}",
+    "{f_name}.{l_name[0]}", "{l_name}_{f_name[0]}", "{f_name}{l_name[0]}{num}", "{f_name}{num}{l_name[0]}",
+    "{num}{f_name}{l_name[0]}", "{l_name}{f_name[0]}{num}", "{l_name}{num}{f_name[0]}", "{num}{l_name}{f_name[0]}",
+    "{f_name[0]}{l_name}{num}", "{f_name[0]}{num}{l_name}", "{num}{f_name[0]}{l_name}", "{l_name[0]}{f_name}{num}",
+    "{l_name[0]}{num}{f_name}", "{num}{l_name[0]}{f_name}", "{f_name[0]}.{l_name}{num}", "{f_name[0]}.{num}{l_name}",
+    "{f_name[0]}{num}.{l_name}", "{num}{f_name[0]}.{l_name}", "{l_name[0]}.{f_name}{num}", "{l_name[0]}.{num}{f_name}",
+    "{l_name[0]}{num}.{f_name}", "{num}{l_name[0]}.{f_name}", "{f_name[0]}_{l_name}{num}", "{f_name[0]}_{num}{l_name}",
+    "{f_name[0]}{num}_{l_name}", "{num}{f_name[0]}_{l_name}", "{l_name[0]}_{f_name}{num}", "{l_name[0]}_{num}{f_name}",
+    "{l_name[0]}{num}_{f_name}", "{num}{l_name[0]}_{f_name}", "{f_name}.{l_name[0]}{num}", "{f_name}.{num}{l_name[0]}",
+    "{f_name}{num}.{l_name[0]}", "{num}{f_name}.{l_name[0]}", "{l_name}_{f_name[0]}{num}", "{l_name}_{num}{f_name[0]}",
+    "{l_name}{num}_{f_name[0]}", "{num}{l_name}_{f_name[0]}"
+  ]
+}
