@@ -31,19 +31,19 @@ python cunp.py --fname Ivan --lname Petrov --birthyear 1985
 ### Single Template Mode
 To generate usernames using a specific template, use the following command:
 ```bash
-python main.py -sT "{f_name}_{num}_{l_name}" --fname <first_name> --lname <last_name> --birthyear <birth_year>
+python cunp.py -sT "{f_name}_{num}_{l_name}" --fname <first_name> --lname <last_name> --birthyear <birth_year>
 ```
 
 ### Custom Sequence Mode
 You can specify a custom sequence of fields using the following command format:
 
 ```bash
-python main.py -i <input_file> -o <output_file> --template "{custom_sequence}"
+python cunp.py -aT -i data.txt -o usernames.txt --fname {0/1/2} --lname {0/1/2} --birthyear {0/1/2} 
 ```
 Replace <input_file> with the file containing target information and specify the <output_file> for the generated usernames. Use arguments to denote the order of fields in the custom sequence. For example:
 
 ```bash
-python main.py -aT -i data.txt -o usernames.txt --fname 1 --lname 0 --birthyear 2 
+python cunp.py -aT -i data.txt -o usernames.txt --fname 1 --lname 0 --birthyear 2 
 ```
 In this example, the script will interpret the first field as the last name, the second field as the first name, and the third field as the birth year.
 
