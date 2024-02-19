@@ -11,10 +11,6 @@ You can install CUNP using git clone:
 ```bash
 git clone https://github.com/E1tex/CUNP.git
 ```
-Then you need to install requirements with pip:
-```bash
-pip install -r requirments.txt
-```
 ## Usage
 
 ### All Templates Mode
