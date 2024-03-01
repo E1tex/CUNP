@@ -37,9 +37,10 @@ def list_from_file(args, profile_content, config):
                     user_profile[key] = value
             except TypeError:
                 pass
-            except IndexError:
+            except ValueError:
                 sys.exit('You need to specify fname/lname/birthyear with values from 0 to 2')
-
+            except IndexError:
+                user_profile[key] = ""
         return_result(user_profile, config)
 
 def list_from_args(args, config):
@@ -51,8 +52,11 @@ def list_from_args(args, config):
     user_profile["fname"] = str(name)
     user_profile["lname"] = args.lname
     user_profile["birthyear"] = args.birthyear
+    if args.singletemplate != None:
+        user_profile["singletemplate"] = args.singletemplate
 
     return_result(user_profile, config)
+
 
 def read_file(file_path):
     if os.path.isabs(file_path):
@@ -84,12 +88,14 @@ def print_cow():
     print(28 * " " + "[ E1tex | https://github.com/E1tex/]\r\n")
 
 def return_result(profile, config):
+
     if profile.get('singletemplate'):
         try:
             templates = [profile['singletemplate']]
             profile['singletemplate'].format(f_name=profile['fname'], l_name=profile['lname'], num=profile['birthyear'])
-        except ValueError and IndexError:
+        except ValueError and IndexError and KeyError:
             sys.exit("Specify the right format for the template! You can find template example in config file.")
+
     else:
         templates = config["templates"]
     if profile.get('outputfile') is None:
